@@ -1,0 +1,12 @@
+apiVersion: log.aiops.com/v1
+kind: RagLogPilot
+metadata:
+  labels:
+    app.kubernetes.io/name: raglogpilot
+    app.kubernetes.io/managed-by: kustomize
+  name: raglogpilot-sample
+spec:
+  workloadNameSpace: default
+  ragFlowEndpoint: "http://118.195.153.120"
+  ragFlowToken: "ragflow-k3MDlkNzI0YjMxMzExZjA4MWNkNmEyZD"
+  feishuWebhook: "https://www.feishu.cn/flow/api/trigger-webhook/7f016c94474f2681b672311cb70607d1"
